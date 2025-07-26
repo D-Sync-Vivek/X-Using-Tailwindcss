@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body class="bg-black text-white m-5">
-    <div class="flex container mx-auto my-4">
+    <div class="flex md:container mx-auto my-4">
 
-        <div class="first w-[70%]">
+        <div class="first md:w-[70%] w-10">
             <div class="logo invert my-4">
                 <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto">
                     <g>
@@ -24,48 +25,180 @@
                 </svg>
             </div>
 
-            <div class="sidebar flex justify-end">
+            <div class="sidebar flex items-end flex-col">
 
-                <ul class="flex flex-col text-xl space-y-3 px-5 font-bold">
+                <ul class="flex flex-col text-xl space-y-3 md:px-5 font-bold">
                     <li
-                        class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined"> home </span>Home
+                        class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full md:w-fit px-5 py-1">
+                        <span class="material-symbols-outlined"> home </span> <span class="hidden md:block">Home</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">search</span>Explore</li>
+                        <span class="material-symbols-outlined">search</span> <span class="hidden md:block">Explore</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined"> notifications </span>Notifications</li>
+                        <span class="material-symbols-outlined"> notifications </span> <span class="hidden md:block">Notifications</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">email</span>Messages</li>
+                        <span class="material-symbols-outlined">email</span> <span class="hidden md:block">Messages</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">add</span>Grok</li>
+                        <span class="material-symbols-outlined">add</span> <span class="hidden md:block">Grok</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">article</span>Lists</li>
+                        <span class="material-symbols-outlined">article</span> <span class="hidden md:block">Lists</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">bookmark</span>Bookmarks</li>
+                        <span class="material-symbols-outlined">bookmark</span> <span class="hidden md:block">Bookmarks</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">group</span>Communities</li>
+                        <span class="material-symbols-outlined">group</span> <span class="hidden md:block">Communities</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">crown</span>Premium</li>
+                        <span class="material-symbols-outlined">crown</span> <span class="hidden md:block">Premium</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">person</span>Profile</li>
+                        <span class="material-symbols-outlined">person</span> <span class="hidden md:block">Profile</span>
+                    </li>
                     <li
                         class="flex justify-start items-center gap-3 hover:bg-gray-900 cursor-pointer hover:rounded-full w-fit px-5 py-1">
-                        <span class="material-symbols-outlined">more</span>More</li>
+                        <span class="material-symbols-outlined">more</span> <span class="hidden md:block">More</span>
+                    </li>
+                    <li>
+                        <div class="button text-center my-4">
+                            <button
+                                class="bg-[#1d9bf0] text-white text-xl rounded-full py-2 px-8 w-full font-normal">Post</button>
+                        </div>
+                    </li>
                 </ul>
 
             </div>
         </div>
-        <div class="second w-full cursor-pointer-y-black"></div>
+
+
+
+
+
+        <div class="second w-full border-[1px] border-x-[#99a1af] border-y-black">
+            <div class="top flex p-3 relative">
+                <div class="absolute w-16 h-1 bg-blue-300 bottom-0 left-[19%] rounded-full z-10"></div>
+                <div class="left w-1/2 flex justify-center font-bold text-lg">For You</div>
+                <div class="right w-1/2 flex justify-center font-bold text-lg">Following</div>
+                <div class="settings">
+                    <span class="material-symbols-outlined">settings</span>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-gray-400"></div>
+            <div class="whatishap flex gap-4">
+                <div class="img m-5">
+                    <img class="rounded-full" width="60"
+                        src="https://www.geeksforgeeks.org/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fauth%2Fprofile%2Fjcfkuivsaomjayt0ydx8&w=256&q=75"
+                        alt="pfp">
+                </div>
+                <div class="w-full">
+                    <input class="h-7 w-full bg-black text-white my-5 text-xl" type="text"
+                        placeholder="What is happening?!">
+                    <div class="text-blue-700 items-center flex gap-2 w-full">
+                        <span class="material-symbols-outlined">globe_asia</span>
+                        <span class="font-bold">Everyone Can Reply</span>
+                    </div>
+                    <div class="w-[90%] h-[1px] bg-gray-400 my-3"></div>
+                    <div class="blueicons flex gap-2 text-blue-700">
+                        <span class="material-symbols-outlined cursor-pointer">image</span>
+                        <span class="material-symbols-outlined cursor-pointer">gif</span>
+                        <span class="material-symbols-outlined cursor-pointer">ballot</span>
+                        <span class="material-symbols-outlined cursor-pointer">sentiment_satisfied</span>
+                        <span class="material-symbols-outlined cursor-pointer">calendar_month</span>
+                        <span class="material-symbols-outlined cursor-pointer">pin_drop</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 bg-gray-400">
+
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+                        <div class="img mx-5">
+                            <img class="rounded-full" width="50"
+                                src="https://www.geeksforgeeks.org/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fauth%2Fprofile%2Fjcfkuivsaomjayt0ydx8&w=256&q=75"
+                                alt="pfp">
+                        </div>
+                        <div class="content my-1">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Daily Planet</span>
+                            <span class="text-gray-500">@PictureFolder • 6h</span>
+                            <div>Superman</div>
+                            <div class="postimg m-2 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://imgs.search.brave.com/KSP0ooWDCCkhkFs-N1H1dP29kxWpQBXk7lUpRV2WCTo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9HTXdaR0pp/TTJFdE16RXdaQzAw/WVRZekxXSXhOell0/TW1KbVpXTmxaamd4/WlRNd1hrRXlYa0Zx/Y0djQC5qcGc"
+                                    alt="post img">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-gray-600 p-1">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">chat_bubble</span>173K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">repeat</span>378K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">favorite</span>843K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">bar_chart</span>1.33M
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="my-3">
+                <div class="post">
+                    <div class="flex">
+                        <div class="img mx-5">
+                            <img class="rounded-full" width="50"
+                                src="https://www.geeksforgeeks.org/_next/image?url=https%3A%2F%2Fmedia.geeksforgeeks.org%2Fauth%2Fprofile%2Fjcfkuivsaomjayt0ydx8&w=256&q=75"
+                                alt="pfp">
+                        </div>
+                        <div class="content my-1">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Daily Planet</span>
+                            <span class="text-gray-500">@PictureFolder • 6h</span>
+                            <div>Fantastic Four - new steps</div>
+                            <div class="postimg m-2 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://i.pinimg.com/736x/2f/89/08/2f8908a07c9b8e4e75b76d0b7769ce1a.jpg"
+                                    alt="post img">
+                            </div>
+                            <div class="icons flex mx-3 justify-between text-gray-600 p-1">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">chat_bubble</span>173K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">repeat</span>378K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">favorite</span>843K
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">bar_chart</span>1.33M
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="my-3">
+            </div>
+        </div>
+
+
+
         <div class="third  w-full">
 
             <div class="search m-3">
@@ -101,8 +234,8 @@
                     <div class="text-sm text-gray-200 hover:bg-[#27282d] cursor-pointer">Mr. Terrific</div>
 
                 </div>
-                <div class="text-blue-600 underline my-3 px-3">Show More</div>
-                
+                <div class="text-blue-600 hover:underline my-3 px-3">Show More</div>
+
             </div>
 
         </div>
